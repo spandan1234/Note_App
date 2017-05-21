@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.spandan.notemakingintent.MainActivity"
+    android:background="#f2c195"
+    android:id="@+id/addTaskSection"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/customtoolbar"
+        android:layout_height="56dp"
+        android:layout_width="0dp"
+        app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:elevation="4dp"
+        android:background="@color/blue_grey"
+        android:minHeight="?android:attr/actionBarSize"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/toolsButton"
+        android:layout_gravity="bottom"
+        android:layout_marginRight="29dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/plus"
+        android:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="39dp" />
+    <android.support.design.widget.FloatingActionButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom"
+        app:fabSize="mini"
+        android:layout_marginRight="38dp"
+        app:rippleColor="@color/Translucent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="11dp"
+        android:visibility="invisible"
+        android:src="@drawable/microphone"
+        app:backgroundTint="@color/amber"
+        app:layout_constraintBottom_toTopOf="@+id/toolsButton"
+        android:id="@+id/menu1" />
+    <android.support.design.widget.FloatingActionButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginRight="38dp"
+        app:rippleColor="@color/Translucent"
+        android:tintMode="src_over"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        android:src="@drawable/image"
+        android:id="@+id/menu2"
+        app:backgroundTint="@color/blue"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/menu1"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/menu1"
+        app:layout_constraintHorizontal_bias="1.0" />
+    <android.support.design.widget.FloatingActionButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom"
+        app:fabSize="mini"
+        android:visibility="invisible"
+        app:rippleColor="@color/Translucent"
+        android:src="@drawable/pallete"
+        app:backgroundTint="@color/amber"
+        app:layout_constraintRight_toLeftOf="@+id/toolsButton"
+        android:layout_marginRight="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="39dp"
+        android:id="@+id/menu3" />
+    <android.support.design.widget.FloatingActionButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom"
+        android:id="@+id/menu4"
+        app:rippleColor="@color/Translucent"
+        android:tintMode="src_over"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        android:src="@drawable/camera"
+        app:backgroundTint="@color/blue"
+        app:layout_constraintRight_toLeftOf="@+id/menu3"
+        android:layout_marginRight="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="39dp" />
+    <android.support.design.widget.FloatingActionButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom"
+        app:fabSize="mini"
+        android:visibility="invisible"
+        app:rippleColor="@color/Translucent"
+        android:src="@drawable/reminder"
+        app:backgroundTint="@color/amber"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/menu3"
+        app:layout_constraintRight_toLeftOf="@+id/menu1"
+        android:layout_marginRight="15dp"
+        android:id="@+id/menu5" />
+    <android.support.design.widget.FloatingActionButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom"
+        android:id="@+id/menu6"
+        app:rippleColor="@color/Translucent"
+        android:tintMode="src_over"
+        app:fabSize="mini"
+        android:visibility="invisible"
+        android:src="@drawable/geo"
+        app:backgroundTint="@color/blue"
+        app:layout_constraintRight_toLeftOf="@+id/menu2"
+        android:layout_marginRight="67dp"
+        android:layout_marginBottom="61dp"
+        app:layout_constraintBottom_toTopOf="@+id/menu4" />
+
+
+
+
+
+
+    <EditText
+        android:id="@+id/addsubTask"
+        android:layout_width="257dp"
+        android:layout_height="36dp"
+        android:alpha="0.5"
+        android:background="@drawable/round_corners"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:text="Add a subTask.."
+        android:textSize="15dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/addSubTask"
+        app:layout_constraintTop_toBottomOf="@+id/addTask"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/addTask" />
+
+    <EditText
+        android:id="@+id/addTask"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:alpha="0.5"
+        android:background="@drawable/round_corners"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:text="Add a new Task.."
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="78dp"
+        app:layout_constraintTop_toBottomOf="@+id/customtoolbar"
+        app:layout_constraintHorizontal_bias="1.0" />
+
+    <TextView
+        android:id="@+id/cancel_action"
+        android:layout_width="65dp"
+        android:layout_height="29dp"
+        android:text="Cancel"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20dp"
+        android:layout_marginEnd="6dp"
+        android:clickable="true"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/customtoolbar"
+        android:layout_marginRight="6dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/done_action"
+        android:layout_width="56dp"
+        android:layout_height="30dp"
+        android:text="Done"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="20dp"
+        android:layout_marginStart="16dp"
+        android:clickable="true"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cancel_action" />
+
+    <EditText
+        android:id="@+id/addNotesToTask"
+        android:layout_width="396dp"
+        android:layout_height="69dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_corners2"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:text="Notes..."
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        android:visibility="invisible" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        app:layout_constraintGuide_begin="384dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="384dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline2"
+        app:layout_constraintGuide_begin="241dp"
+        android:orientation="horizontal" />
+
+    <Button
+        android:id="@+id/addSubTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:text=""
+        android:drawableLeft="@drawable/button_style"
+
+        android:layout_marginLeft="256dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="238dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/addTask"
+        android:onClick="inflateTasks"/>
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="395dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>

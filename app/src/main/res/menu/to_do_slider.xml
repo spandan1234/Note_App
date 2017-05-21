@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/bookmark"
+        android:orderInCategory="100"
+        android:checkable="true"
+        android:checked="false"
+        android:icon="@drawable/bookmark_notselected"
+        android:title="bookmark"
+        app:showAsAction="ifRoom" />
+</menu>

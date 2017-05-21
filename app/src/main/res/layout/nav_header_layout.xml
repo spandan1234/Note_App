@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="#000">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/nav_header_image"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/headerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Sam Wilson"
+        android:textSize="17dp"
+        android:textColor="#fff"
+        android:layout_below="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/headerEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sam.wilson@gmail.com"
+        android:textColor="#fcc"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/headerName"
+        android:layout_alignStart="@+id/headerName" />
+
+</RelativeLayout>
